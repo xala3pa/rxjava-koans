@@ -157,7 +157,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
         elevatorPassengersObservable.reduce(0, (accumulatedWeight, elevatorPassenger) ->
                 elevatorPassenger.mWeightInPounds + accumulatedWeight)
                 .subscribe(testSubscriber);
-        assertThat(testSubscriber.getOnNextEvents().get(0)).isEqualTo(____);
+        assertThat(testSubscriber.getOnNextEvents().get(0)).isEqualTo(850);
     }
 
     /**
