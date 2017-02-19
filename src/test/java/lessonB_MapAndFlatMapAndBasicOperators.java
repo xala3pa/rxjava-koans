@@ -85,7 +85,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
         });
         map.subscribe(mSubscriber);
 
-        assertThat(mSubscriber.getOnNextEvents()).hasSize(____);
+        assertThat(mSubscriber.getOnNextEvents()).hasSize(2);
 
         /** Was the result above what you expected? A bit strange huh? You'd think that you'd get
          * a value matching the number of items of foods in each list at first glance.
@@ -113,7 +113,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
             }
         });
         individualItemsObservable.subscribe(mSubscriber);
-        assertThat(mSubscriber.getOnNextEvents()).hasSize(____);
+        assertThat(mSubscriber.getOnNextEvents()).hasSize(11);
 
         mSubscriber = new TestSubscriber<>();
 
@@ -131,7 +131,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
             }
         }).subscribe(mSubscriber);
 
-        assertThat(mSubscriber.getOnNextEvents()).hasSize(____);
+        assertThat(mSubscriber.getOnNextEvents()).hasSize(7);
 
         System.out.println("With my 5 bucks I can buy: " + mSubscriber.getOnNextEvents());
     }
