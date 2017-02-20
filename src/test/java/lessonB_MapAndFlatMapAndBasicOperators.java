@@ -170,7 +170,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
 
         Observable<String> repeatingObservable = Observable.just(weapon).repeat(4);
         repeatingObservable.subscribe(subscriber);
-        assertThat(subscriber.getOnNextEvents()).hasSize(____);
+        assertThat(subscriber.getOnNextEvents()).hasSize(4);
 
         subscriber = new TestSubscriber<>();
         /**
@@ -178,7 +178,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
          */
         Observable<String> challengeRepeatingObservable = repeatingObservable.repeat(4);
         challengeRepeatingObservable.subscribe(subscriber);
-        assertThat(subscriber.getOnNextEvents()).hasSize(____);
+        assertThat(subscriber.getOnNextEvents()).hasSize(16);
     }
 
 
