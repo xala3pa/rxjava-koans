@@ -215,7 +215,7 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
     public void _6_convertingEvents() {
         mStringA = "";
         Observable.just("wE", "hOpe", "yOU", "aRe", "eNjOyInG", "thIS")
-                .map(s -> _____)
+                .map(s -> s.toLowerCase())
                 .subscribe(s -> mStringA += s + " ");
 
         assertThat(mStringA).isEqualTo("we hope you are enjoying this ");
