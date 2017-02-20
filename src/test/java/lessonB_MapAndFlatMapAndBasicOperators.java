@@ -201,9 +201,9 @@ public class lessonB_MapAndFlatMapAndBasicOperators {
                 })
                 .doOnNext(integer -> mStringC += integer)
                 .subscribe(integer -> mStringC += integer);
-        assertThat(mStringA).isEqualTo("____");
-        assertThat(mStringB).isEqualTo("____");
-        assertThat(mStringC).isEqualTo("____");
+        assertThat(mStringA).isEqualTo("123456");
+        assertThat(mStringB).isEqualTo("246");
+        assertThat(mStringC).isEqualTo("112233445566");
     }
 
     /**
